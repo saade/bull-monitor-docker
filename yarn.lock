@@ -46,23 +46,24 @@
     http-errors "^1.7.3"
     object-path "^0.11.4"
 
-"@bull-monitor/express@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@bull-monitor/express/-/express-0.24.0.tgz#79b2d61875bcc068441c86fe63608b4106b3640c"
-  integrity sha512-dMpDzKGmkQVQ/q+iADGCe7hvNhr+npuXfRkdeWtGBHz5DA61nxcRQqovkfIZrIGEOdb+ViH+9H/2+rlka5oLLw==
+"@bull-monitor/express@^0.28.0":
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/@bull-monitor/express/-/express-0.28.0.tgz#7033c076d2e9ad07936ab87363a3e0d73ac60853"
+  integrity sha512-xDt+8Y9+/HVD8zw/xpBx8qifM1duNJrGbCYallnWCBmyuR9Gkk0NcxvrTgJHCavo1P/mNar+6CGEagLH+ADQDA==
   dependencies:
-    "@bull-monitor/root" "^0.24.0"
+    "@bull-monitor/root" "^0.28.0"
     apollo-server-express "^2.22.2"
 
-"@bull-monitor/root@^0.24.0":
-  version "0.24.0"
-  resolved "https://registry.yarnpkg.com/@bull-monitor/root/-/root-0.24.0.tgz#20d22b589d0c173522d43b549bfce846b7896cc9"
-  integrity sha512-lVp8Xc7XvAvfJE002FqOG5Edsh3nwo/C8m3JEldDNdzgBlo1IEAyI65FmLZGEoqX/4gv7kOR85/rjb0IutSpFg==
+"@bull-monitor/root@^0.28.0":
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/@bull-monitor/root/-/root-0.28.0.tgz#c7c129e2c0093514f447b702518f3ebd8aa9a628"
+  integrity sha512-17sVij5Otg1x6iMDSOwvy28E15WVhHFSYb8khaW3RLIW1flvl9GPle4nCowvzf+RL9iKjdV+o/TKNKSuXmkXRg==
   dependencies:
     graphql "^15.5.0"
     graphql-scalars "^1.9.0"
     lodash "^4.17.21"
     redis-info "^3.0.8"
+    toad-scheduler "^1.4.0"
 
 "@josephg/resolvable@^1.0.0":
   version "1.0.1"
@@ -1351,6 +1352,11 @@ symbol-observable@^1.0.4:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-1.2.0.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
   integrity sha512-e900nM8RRtGhlV36KGEU9k65K3mPb1WV70OdjfxlG2EAuM1noi/E/BaW/uMhL7bPEssK8QV57vN3esixjUvcXQ==
+
+toad-scheduler@^1.4.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/toad-scheduler/-/toad-scheduler-1.5.0.tgz#a7a69b1d1a8d1067868b8e76b3af7909bf347346"
+  integrity sha512-jzvrk3gmqHn+twYZTPhdHO2xbLqY3jdhtY/VPQxi/G1VrnwzpWDSHTOHS3x3yFBVNZW3YmUHTGHPfSf2b6iQMg==
 
 toidentifier@1.0.0:
   version "1.0.0"

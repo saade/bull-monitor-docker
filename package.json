@@ -1,7 +1,7 @@
 {
   "type": "module",
   "dependencies": {
-    "@bull-monitor/express": "^0.24.0",
+    "@bull-monitor/express": "^0.28.0",
     "bull": "^3.22.7",
     "express": "^4.17.1"
   }
