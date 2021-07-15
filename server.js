@@ -8,16 +8,15 @@ const REDIS_PORT    = process.env.REDIS_PORT    || 6379
 const BULL_PREFIX   = process.env.BULL_PREFIX   || 'bull'
 const PORT          = process.env.PORT          || 3000
 
-const queues = REDIS_QUEUES.split(',')
+const queues = REDIS_QUEUES.split(',').map(queue => queue.split(':'))
 
-console.log({ REDIS_HOST, REDIS_PORT, REDIS_QUEUES, BULL_PREFIX })
+console.log({ REDIS_HOST, REDIS_PORT, REDIS_QUEUES, BULL_PREFIX, queues })
 
 ;(async () => {
     const app = Express()
 
     const monitor = new BullMonitorExpress({
-        gqlPlayground: true,
-        queues: queues.map(queue_name => new Queue(queue_name, { redis: { host: REDIS_HOST, port: REDIS_PORT }, prefix: BULL_PREFIX }))
+        queues: queues.map(([queue_name, queue_prefix]) => new Queue(queue_name, { redis: { host: REDIS_HOST, port: REDIS_PORT }, prefix: queue_prefix || BULL_PREFIX }))
     })
 
     await monitor.init()
