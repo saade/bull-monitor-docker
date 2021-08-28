@@ -1,6 +1,9 @@
 {
   "version": "1.3.0",
   "type": "module",
+  "scripts": {
+    "serve": "node server.mjs"
+  },
   "dependencies": {
     "@bull-monitor/express": "^1.3.0",
     "bull": "^3.22.7",
