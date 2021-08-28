@@ -1,6 +1,7 @@
+import { version } from './package.json'
 import { BullMonitorExpress } from '@bull-monitor/express'
 import Express from 'express'
-import Queue from 'bull';
+import Queue from 'bull'
 
 const REDIS_QUEUES  = process.env.REDIS_QUEUES  || ''
 const REDIS_HOST    = process.env.REDIS_HOST    || '127.0.0.1'
@@ -10,6 +11,7 @@ const PORT          = process.env.PORT          || 3000
 
 const queues = REDIS_QUEUES.split(',').map(queue => queue.split(':'))
 
+console.log('Bull Monitor v' + version)
 console.log({ REDIS_HOST, REDIS_PORT, REDIS_QUEUES, BULL_PREFIX, queues })
 
 ;(async () => {
