@@ -46,18 +46,18 @@
     http-errors "^1.7.3"
     object-path "^0.11.4"
 
-"@bull-monitor/express@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@bull-monitor/express/-/express-1.1.0.tgz#1bf7827916ddd6a778618838c18661162e62395b"
-  integrity sha512-s2KEkEsWZJrVdcH1VDaPmBTJdKFrTbq8hFqpAoTltXYQmidsh/A6ibFjIP+c28aoSTneecRhXp2WaHA19smPQQ==
+"@bull-monitor/express@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@bull-monitor/express/-/express-1.3.0.tgz#37b822ab144b9ac1a26d7da2ffcac5c732b76820"
+  integrity sha512-s30g8rtdX1fInH85pfAV8kbB2XbjNAQ9VsqSQMim7FcjTAO9BpBqVTEhZbZ4MOMblzUnu+fv65Gi032p1SZfRA==
   dependencies:
-    "@bull-monitor/root" "^1.1.0"
+    "@bull-monitor/root" "^1.3.0"
     apollo-server-express "^2.22.2"
 
-"@bull-monitor/root@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@bull-monitor/root/-/root-1.1.0.tgz#563a55777e057eabf5b9c61c3f1253336c1d46f0"
-  integrity sha512-dx7mrIYD7D4m7hrrhDfrZIhpN+VOadVB+IJHKwd4sf3HU7hFqEsQTMmdWEruMEIxO4bU0ZWX3mqp0KFc4onwag==
+"@bull-monitor/root@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@bull-monitor/root/-/root-1.3.0.tgz#51fa12aef94562dba316eff9ab58174496a7f8ab"
+  integrity sha512-PUV/YQ//K+Qlmx+In0diZXw8lblzB5IOEQnhkMv5gYVwO0JKuvnCzKKPR9ty/vuz2NsrB76JD7SR2EhcETZ8jw==
   dependencies:
     graphql "^15.5.0"
     graphql-scalars "^1.9.0"
