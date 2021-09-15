@@ -5,7 +5,7 @@
     "start": "node server.mjs"
   },
   "dependencies": {
-    "@bull-monitor/express": "^1.3.0",
+    "@bull-monitor/express": "^2.1.0",
     "bull": "^3.22.7",
     "express": "^4.17.1"
   }
