@@ -18,10 +18,8 @@ console.log({ REDIS_HOST, REDIS_PORT, REDIS_QUEUES, BULL_PREFIX, queues })
 
     const monitor = new BullMonitorExpress({
         queues: queues.map(([queue_name, queue_prefix]) => new Queue(queue_name, { redis: { host: REDIS_HOST, port: REDIS_PORT }, prefix: queue_prefix || BULL_PREFIX })),
-        metrics: {
-            collectInterval: { minutes: 1 },
-            maxMetrics: 100,
-        }
+        gqlPlayground: true,
+        gqlIntrospection: true
     })
 
     await monitor.init()
